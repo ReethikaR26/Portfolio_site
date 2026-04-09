@@ -55,7 +55,8 @@ body{
 
 .cloud1{
     top: 50px;
-   
+    filter: blur(2px);
+    opacity: 0.9;
     animation: floatRight 45s linear infinite;
 }
 .cloud2{
@@ -118,6 +119,17 @@ body{
     font-size: 1.4rem;
     color: #555;
     line-height:1.6;
+    
+}
+
+.hero .hero-img{
+    height: 180px;
+    width: 180px;
+}
+
+.journey-img{
+    height: auto;
+    width: auto;
 }
 
 section{
@@ -125,14 +137,16 @@ section{
   max-width: 1200px;
   padding: 1rem;
 }
-.skills{
+.skills-section{
     display:flex;
     flex-wrap: wrap;
     justify-content: space-around;
     gap: 1.5rem;
+    padding: 40px;
 }
 .skill-card{
     flex: 1 1 250px;
+    backdrop-filter: blur(10px);
     border: 1.8px solid #ccc;
     border-radius: 15px;
     background-color: #fff;
@@ -145,6 +159,24 @@ section{
 .skill-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+.skills{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skills span{
+    background: #f1f3f5;
+    padding: 8px 14px;
+    border-radius: 20px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.skills span:hover{
+    background: #4f46e5;
+    color: white;
 }
 
 .category{
@@ -233,5 +265,5 @@ footer::before {
 @keyframes floatRight{
     0% { transform: translate(0, 0); }
   50% { transform: translate(60vw, 10px); }
-  100% { transform: translate(120vw, 0); }
+  100% { transform: translate(80vw, 0); }
     }
