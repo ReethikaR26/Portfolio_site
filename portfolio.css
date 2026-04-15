@@ -132,16 +132,14 @@ body{
 }
 
 
-.journey {
+#journey {
   padding: 60px 10px;
   max-width: 1000px;
   margin: 0;
 }
 
-.journey h2 {
-  font-size: 2.5rem;
-  margin-bottom: 50px;
-  border-left: 5px solid #4f46e5;
+.journey .topic {
+  margin-bottom: 70px;
   padding-left: 10px;
 }
 
@@ -150,6 +148,7 @@ body{
   display: flex;
   justify-content: space-between;
   position: relative;
+  padding-left: 30px;
 }
 
 /* Line */
@@ -171,17 +170,16 @@ body{
   z-index: 1;
 }
 
-/* Circle */
 .circle {
   width: 20px;
   height: 20px;
-  background: #061861;
+  background: #000708;
   border-radius: 50%;
   margin: auto;
   transition: 0.3s;
 }
 
-/* Content */
+
 .content {
   margin-top: 15px;
   background: white;
@@ -201,10 +199,9 @@ body{
   color: #666;
 }
 
-/* Hover effects */
 .timeline-item:hover .circle {
   transform: scale(1.5);
-  background: #eaec77;
+  background: #ececed;
 }
 
 .timeline-item:hover .content {
@@ -214,9 +211,9 @@ body{
 
 
 section{
-  margin: 2rem auto;
+  margin: 0.6rem auto;
   max-width: 1200px;
-  padding: 1rem;
+  padding: 0.4rem;
 }
 
 .skills-section {
@@ -288,11 +285,11 @@ section{
     color: #555;
 }
 
-.projects{
+#projects{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)) ;
     gap: 1.5rem;
-   
+    z-index: 0;
 }
 .projects-card{
     border-radius: 10px;
@@ -328,11 +325,11 @@ footer{
     padding: 2rem;
     background: linear-gradient(
     to top,
-    #2f5d34 0%,    
-    #4e7d4f 50%,
+    #10691a 0%,    
+    #3d7f3e 50%,
     rgba(78, 125, 79, 0) 100%
   ); 
-color: rgb(188, 185, 185);
+color: rgb(234, 234, 234);
 
     height: 70px;
     margin-top: 2rem;
@@ -360,7 +357,7 @@ footer::before {
 .kite-container {
   position: absolute;
   bottom: 20px;
-  left: 6%;
+  left: 1%;
   width: 100%;
   pointer-events: none; 
   z-index: -1;
@@ -400,6 +397,40 @@ footer::before {
   animation: tailWave 1.5s ease-in-out infinite;
 }
 
+.tree {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 200px;        
+  opacity: 0.35;    
+  z-index: 0;       
+  pointer-events: none;
+  animation: treeSway 6s ease-in-out infinite;
+  transform-origin: bottom center;
+  filter: blur(1px);
+}
+.tree-right{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 200px;        
+  opacity: 0.35;    
+  z-index: 0;       
+  pointer-events: none;
+  animation: treeSway 6s ease-in-out infinite;
+  transform-origin: bottom center;
+  filter: blur(1px);
+}
+.tree1 {
+  left: 5%;
+  width: 180px;
+}
+
+.tree2 {
+  right: 9%;
+  width: 220px;
+}
+
 @keyframes kiteFloat {
   0%   { transform: translate(0, 0) rotate(45deg); }
   50%  { transform: translate(40px, -15px) rotate(47deg); }
@@ -416,3 +447,9 @@ footer::before {
   50% { transform: translate(60vw, 10px); }
   100% { transform: translate(80vw, 0); }
     }
+
+@keyframes treeSway {
+  0%, 100% { transform: rotate(0deg); }
+  50% { transform: rotate(3deg); }
+}
+
