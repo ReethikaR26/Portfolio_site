@@ -9,8 +9,10 @@
     </head>
 
     <body>
+      <div class="container">
         <div class="cloud cloud1"></div>
         <div class="cloud cloud2"></div>
+
         <header>
             <nav class="top-bar">
                 <ul><li>Reethika Ramamoorthy</li></ul>
@@ -19,20 +21,21 @@
                   <li><a href="#journey">Journey</a></li>
                   <li><a href="#skills">Skills</a></li>
                   <li><a href="#projects">Projects</a></li>
-                <li><a href="https://www.linkedin.com/in/reethika-r-4943b6182">LinkedIn</a></li>
-                <li><a href="https://github.com/ReethikaR26">GitHub</a></li>
-                <li><a href="mailto:reethikaramamoorthy@gmail.com">Email</a></li>
+                <li><a href="mailto:reethikaramamoorthy@gmail.com">Contact</a></li>
                 </ul>
             </nav>
         </header><br>
         <div class="hero">
+          <div class="hero-content">
             <p>Hi, I'm Reethika, — I build modern web applications with React, JavaScript, and a passion for pixel-perfect usability. 
             With a background in QA Engineering, I merge reliability with creative front-end development.
             </p>
             <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
                 <a href="#projects" style="background: #1f2a3e; color: white; padding: 0.7rem 1.6rem; border-radius: 40px; text-decoration: none; font-weight: 500;">View projects →</a>
-                <a href="mailto:reethikaramamoorthy@gmail.com" style="background: transparent; border: 1px solid #b9cad6; padding: 0.7rem 1.6rem; border-radius: 40px; text-decoration: none; color: #1f2a3e;">Get in touch</a>
+                <a href="mailto:reethikaramamoorthy@gmail.com" style="background: transparent; border: 1px solid #4a5963; padding: 0.7rem 1.6rem; border-radius: 40px; text-decoration: none; color: #1f2a3e;">Get in touch</a>
             </div>
+          </div>
+            
             <img class="hero-img" src="dev2.png" alt="developer illustration" onerror="this.src='https://placehold.co/400x400?text=✨'"/>
         </div>
         <section id="About">
@@ -135,30 +138,29 @@
             <div class="projects-card">
                 <div class="card-image"><img src="aiimggen.png"/></div>
                 <div class="title">AI Image generator</div>
-                <div class="project-description">Generates AI images based on user prompts. 
-                    • Integrated with Image generator AI model using Hugging Face API 
-                    • Stores and displays generated image history.</div>
+                <div class="project-description">Generates AI images from user prompts using Hugging Face API. Stores image history with smooth UI.</div>
+                <div class="project-tech"><span class="tech-tag">React</span><span class="tech-tag">Hugging Face</span><span class="tech-tag">API</span></div>
                 <div class="project-link"></div>
             </div>
             <div class="projects-card">
                 <div class="card-image"><img src="underdev.jpg"/></div>
                 <div class="title">Speech-to-sign visualizer</div>
-                <div class="project-description"> Converts speech into Sign language visuals from sign dataset 
-                    • Converts speech into text using Web speech API and each word into sign visuals  </div>
+                <div class="project-description">Converts speech into sign language visuals using Web Speech API & sign dataset mapping.</div>
+                <div class="project-tech"><span class="tech-tag">Web Speech API</span><span class="tech-tag">JavaScript</span><span class="tech-tag">Canvas</span></div>
                 <div class="project-link"></div>
             </div>
             <div class="projects-card">
                 <div class="card-image"><img src="lurkforwork.png"/></div>
                 <div class="title">LurkforWork</div>
-                <div class="project-description">Single-page web application using HTML, CSS, and JavaScript along with Responsive UI 
-                    • User authentication with API integration (login/ register) 
-                    </div>
+                <div class="project-description">Single-page job-search web app with authentication, responsive UI, and API integration.</div>
+                <div class="project-tech"><span class="tech-tag">HTML/CSS</span><span class="tech-tag">JS</span><span class="tech-tag">Auth API</span></div>
                 <div class="project-link"></div>
             </div>
             <div class="projects-card">
                 <div class="card-image"><img src="movieweb.png"/></div>
                 <div class="title">Movie webpage using React</div>
-                <div class="project-description">A single page movie listing web application madre using React </div>
+                <div class="project-description">Single-page movie listing web app made with React, fetching real-time movie data and filtering.</div>
+                <div class="project-tech"><span class="tech-tag">React</span><span class="tech-tag">CSS modules</span><span class="tech-tag">API</span></div>
                 <div class="project-link"></div>
             </div>
             <div class="kite-container">
@@ -167,12 +169,20 @@
             </div>
             </div>
         </section>
-        
+      </div>
         <footer>
-          <img src="tree-a.png" class="tree tree1" />
-        <img src="tree-a.png" class="tree tree2" />
-        <img src="tree-a.png" class="tree-right " />
-            <p>© 2026 Reethika Ramamoorthy</p></footer>
+          <div class="footer-content">
+              <img src="tree-a.png" class="tree tree1" />
+              <img src="tree-a.png" class="tree tree2" />
+              <img src="tree-a.png" class="tree-right " />
+              <div class="social-links">
+                  <a href="https://www.linkedin.com/in/reethika-r-4943b6182" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                  <a href="https://github.com/ReethikaR26" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                  <a href="mailto:reethikaramamoorthy@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+              </div>
+              <p>© 2026 Reethika Ramamoorthy</p>
+            </div>
+        </footer>
 
     </body>
 
